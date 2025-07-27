@@ -3,12 +3,13 @@ import React, { useState } from "react";
 import { UserComponent, userKey } from "./UserComponent"; // named import for UserComponent
 import Header from "./Header"; // default import for Header component
 import { Additon } from "./Addition";
+import ToDo from "./ToDO";
 // core javascript
 function App() {
   const [counter, setCounter] = useState(0);
   return (
     <div>
-      <h1>Count Value : {counter}</h1>
+      {/* <h1>Count Value : {counter}</h1>
       <h2>App Component</h2>
       <p>This is the App component.</p>
       <h2>Sum : {sum()}</h2>
@@ -17,7 +18,8 @@ function App() {
       <UserComponent />
       <Header />
       <Additon />
-      <h1> {userKey}</h1>
+      <h1> {userKey}</h1> */}
+      <ToDo />
     </div>
   );
 
