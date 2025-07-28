@@ -4,6 +4,7 @@ import { UserComponent, userKey } from "./UserComponent"; // named import for Us
 import Header from "./Header"; // default import for Header component
 import { Additon } from "./Addition";
 import ToDo from "./ToDO";
+import ClickEvent from "./clickEvent";
 // core javascript
 function App() {
   const [counter, setCounter] = useState(0);
@@ -20,6 +21,7 @@ function App() {
       <Additon />
       <h1> {userKey}</h1> */}
       <ToDo />
+      <ClickEvent />
     </div>
   );
 
