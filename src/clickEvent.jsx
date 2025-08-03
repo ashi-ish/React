@@ -10,6 +10,7 @@ function ClickEvent() {
   return (
     <>
       <button onClick={handleClick}>Click Me</button>
+      {/* function definition */}
       <button onClick={() => fruit("Apple")}>Show Fruit</button>
     </>
   );
