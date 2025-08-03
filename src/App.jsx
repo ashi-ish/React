@@ -5,6 +5,8 @@ import Header from "./Header"; // default import for Header component
 import { Additon } from "./Addition";
 import ToDo from "./ToDO";
 import ClickEvent from "./clickEvent";
+import State from "./State";
+import StateCounter from "./StateCounter"; // default import for StateCounter component
 // core javascript
 function App() {
   const [counter, setCounter] = useState(0);
@@ -20,8 +22,15 @@ function App() {
       <Header />
       <Additon />
       <h1> {userKey}</h1> */}
-      <ToDo />
-      <ClickEvent />
+      {/* <ToDo />
+      <ClickEvent /> */}
+      <State />
+      <StateCounter />
+      {/* React Without JSX */}
+      {/* <h1>Hello world</h1> */}
+      {/* <div id="app">hello app</div> */}
+      {/* <h1 className="heading">Hello world</h1> */}
+      {/* React Without JSX */}
     </div>
   );
 
@@ -30,16 +39,16 @@ function App() {
   // return createElement("h1", { className: "heading" }, "Hello world");
 }
 
-function Iphone() {
-  return (
-    <div>
-      <h1>Apple</h1>
-    </div>
-  );
-}
+// function Iphone() {
+//   return (
+//     <div>
+//       <h1>Apple</h1>
+//     </div>
+//   );
+// }
 
-function sum() {
-  return 10 + 30;
-}
+// function sum() {
+//   return 10 + 30;
+// }
 
 export default App;
