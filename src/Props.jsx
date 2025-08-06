@@ -1,3 +1,4 @@
+import { UserComponent } from "./UserComponent"; // named import for UserComponent
 function Props({ name, age, email }) {
   // Props component to demonstrate the use of props in React
   // Props are used to pass data from one component to another

@@ -1,6 +1,6 @@
 import { createElement } from "react"; // React without JSX
 import React, { useState } from "react";
-import { UserComponent, userKey } from "./UserComponent"; // named import for UserComponent
+import { UserComponent } from "./UserComponent"; // named import for UserComponent
 import Header from "./Header"; // default import for Header component
 import { Additon } from "./Addition";
 import ToDo from "./ToDO";
@@ -21,7 +21,6 @@ function App() {
       <h2>Sum : {sum()}</h2>
       <button onClick={() => setCounter(counter + 1)}>Increment</button>
       <Iphone />
-      <UserComponent />
       <Header />
       <Additon />
       <h1> {userKey}</h1> */}
@@ -36,7 +35,9 @@ function App() {
       {/* <h1 className="heading">Hello world</h1> */}
       {/* React Without JSX */}
       {/* <MultipleConditions /> */}
-      <Props name="John Doe" age={30} email="john.doe@example.com" />
+      {/* <Props name="John Doe" age={30} email="john.doe@example.com" /> */}
+      <Props />
+      <UserComponent />
     </div>
   );
 
