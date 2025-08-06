@@ -1,4 +1,9 @@
 function Props({ name, age, email }) {
+  // Props component to demonstrate the use of props in React
+  // Props are used to pass data from one component to another
+  // They are read-only and immutable
+  // This component receives name, age, and email as props
+  // It renders the received props in the UI
   return (
     <div>
       <h1>Props in React JS</h1>

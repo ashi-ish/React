@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 
+// MultipleConditions component to demonstrate multiple conditions in React
+// It uses useState to manage the count state
+// The component renders a heading that changes based on the count value
+// The button increments the count when clicked
+// The component is exported for use in other parts of the application
+
 function MultipleConditions() {
   const [count, setCount] = useState(0);
 
