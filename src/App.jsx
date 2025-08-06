@@ -7,6 +7,8 @@ import ToDo from "./ToDO";
 import ClickEvent from "./clickEvent";
 import State from "./State";
 import StateCounter from "./StateCounter"; // default import for StateCounter component
+import HideAndShow from "./HideAndShow";
+import MultipleConditions from "./MultipleCondition";
 // core javascript
 function App() {
   const [counter, setCounter] = useState(0);
@@ -24,13 +26,15 @@ function App() {
       <h1> {userKey}</h1> */}
       {/* <ToDo />
       <ClickEvent /> */}
-      <State />
-      <StateCounter />
+      {/* <State />
+      <StateCounter /> */}
+      {/* <HideAndShow /> */}
       {/* React Without JSX */}
       {/* <h1>Hello world</h1> */}
       {/* <div id="app">hello app</div> */}
       {/* <h1 className="heading">Hello world</h1> */}
       {/* React Without JSX */}
+      <MultipleConditions />
     </div>
   );
 
