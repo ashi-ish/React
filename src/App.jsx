@@ -36,7 +36,7 @@ function App() {
       {/* <h1 className="heading">Hello world</h1> */}
       {/* React Without JSX */}
       {/* <MultipleConditions /> */}
-      <Props name="John Doe" age={30} />
+      <Props name="John Doe" age={30} email="john.doe@example.com" />
     </div>
   );
 
