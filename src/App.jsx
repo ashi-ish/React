@@ -9,6 +9,7 @@ import State from "./State";
 import StateCounter from "./StateCounter"; // default import for StateCounter component
 import HideAndShow from "./HideAndShow";
 import MultipleConditions from "./MultipleCondition";
+import Props from "./Props";
 // core javascript
 function App() {
   const [counter, setCounter] = useState(0);
@@ -34,7 +35,8 @@ function App() {
       {/* <div id="app">hello app</div> */}
       {/* <h1 className="heading">Hello world</h1> */}
       {/* React Without JSX */}
-      <MultipleConditions />
+      {/* <MultipleConditions /> */}
+      <Props name="John Doe" age={30} />
     </div>
   );
 
