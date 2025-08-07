@@ -1,3 +1,4 @@
+import College from "./College";
 import Props from "./Props";
 
 export function UserComponent() {
@@ -6,6 +7,21 @@ export function UserComponent() {
     age: 26,
     email: "john.doe@example.com",
   };
+
+  let userObject1 = {
+    name: "John Doe",
+    age: 26,
+    email: "john.doe@example.com",
+  };
+
+  let collegeNames = [
+    "Harvard University",
+    "Stanford University",
+    "Massachusetts Institute of Technology (MIT)",
+    "California Institute of Technology (Caltech)",
+    "University of Oxford",
+  ];
+
   return (
     <div>
       {/* <Props
@@ -13,7 +29,9 @@ export function UserComponent() {
         age={userObject.age}
         email={userObject.email}
       /> */}
+      <College name={collegeNames} />
       <Props user={userObject} />
+      <Props user={userObject1} />
     </div>
   );
 }
