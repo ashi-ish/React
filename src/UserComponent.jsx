@@ -2,14 +2,17 @@ import Props from "./Props";
 
 export function UserComponent() {
   let userObject = {
-    name: "Ashish Parulekar",
+    name: "John Doe",
     age: 26,
-    email: "ashish@example.com",
+    email: "john.doe@example.com",
   };
   return (
     <div>
-      <h1>User Component</h1>
-      <p>This is the User component.</p>
+      {/* <Props
+        name={userObject.name}
+        age={userObject.age}
+        email={userObject.email}
+      /> */}
       <Props user={userObject} />
     </div>
   );

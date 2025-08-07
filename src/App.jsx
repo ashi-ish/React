@@ -12,7 +12,11 @@ import MultipleConditions from "./MultipleCondition";
 import Props from "./Props";
 // core javascript
 function App() {
-  const [counter, setCounter] = useState(0);
+  // let userObject = {
+  //   name: "Ashish Parulekar",
+  //   age: 26,
+  //   email: "ashish@example.com",
+  // };
   return (
     <div>
       {/* <h1>Count Value : {counter}</h1>
@@ -36,7 +40,8 @@ function App() {
       {/* React Without JSX */}
       {/* <MultipleConditions /> */}
       {/* <Props name="John Doe" age={30} email="john.doe@example.com" /> */}
-      <Props />
+      {/* <UserComponent /> */}
+      {/* <Props user={userObject} /> */}
       <UserComponent />
     </div>
   );
