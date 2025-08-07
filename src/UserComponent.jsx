@@ -1,5 +1,7 @@
 import College from "./College";
 import Props from "./Props";
+import Student from "./Student";
+import { useState } from "react";
 
 export function UserComponent() {
   let userObject = {
@@ -22,6 +24,8 @@ export function UserComponent() {
     "University of Oxford",
   ];
 
+  const [student, setStudent] = useState();
+
   return (
     <div>
       {/* <Props
@@ -29,6 +33,9 @@ export function UserComponent() {
         age={userObject.age}
         email={userObject.email}
       /> */}
+      <button onClick={() => setStudent("John Cena")}>Set Student</button>
+      {student && <Student name={student} />}
+
       <College name={collegeNames} />
       <Props user={userObject} />
       <Props user={userObject1} />
