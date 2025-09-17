@@ -10,6 +10,7 @@ import StateCounter from "./StateCounter"; // default import for StateCounter co
 import HideAndShow from "./HideAndShow";
 import MultipleConditions from "./MultipleCondition";
 import Props from "./Props";
+import User from "./User";
 // core javascript
 function App() {
   // let userObject = {
@@ -42,7 +43,8 @@ function App() {
       {/* <Props name="John Doe" age={30} email="john.doe@example.com" /> */}
       {/* <UserComponent /> */}
       {/* <Props user={userObject} /> */}
-      <UserComponent />
+      {/* <UserComponent /> */}
+      <User name="Ashish" />
     </div>
   );
 
