@@ -1,7 +1,6 @@
-function User({ name }) {
+function User({ name = "New User" }) {
   return (
     <div>
-      <h1>User Component</h1>
       <h2>Name: {name}</h2>
     </div>
   );

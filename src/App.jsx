@@ -45,6 +45,7 @@ function App() {
       {/* <Props user={userObject} /> */}
       {/* <UserComponent /> */}
       <User name="Ashish" />
+      <User />
     </div>
   );
 
