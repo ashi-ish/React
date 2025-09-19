@@ -19,6 +19,7 @@ function App() {
   //   age: 26,
   //   email: "ashish@example.com",
   // };
+  const [value, setValue] = useState("");
   return (
     <div>
       {/* <h1>Count Value : {counter}</h1>
@@ -47,13 +48,19 @@ function App() {
       {/* <UserComponent /> */}
       {/* <User name="Ashish" />
       <User /> */}
-      <Wrapper color="orange">
+      {/* <Wrapper color="orange">
         <h1>Wrapper Component</h1>
       </Wrapper>
 
       <Wrapper>
         <h1>Wrapper Component 1</h1>
-      </Wrapper>
+      </Wrapper> */}
+      <div>
+        <h1>Get Input Field Value</h1>
+        <input type="text" value={value} onChange={(e) => setValue(e.target.value)} placeholder="Enter something" />
+        <h2>{value}</h2>
+        <button onClick={() => setValue("")}>Clear</button>
+      </div>
     </div>
   );
 
