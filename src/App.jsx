@@ -11,6 +11,7 @@ import HideAndShow from "./HideAndShow";
 import MultipleConditions from "./MultipleCondition";
 import Props from "./Props";
 import User from "./User";
+import Wrapper from "./Wrapper";
 // core javascript
 function App() {
   // let userObject = {
@@ -44,8 +45,15 @@ function App() {
       {/* <UserComponent /> */}
       {/* <Props user={userObject} /> */}
       {/* <UserComponent /> */}
-      <User name="Ashish" />
-      <User />
+      {/* <User name="Ashish" />
+      <User /> */}
+      <Wrapper color="orange">
+        <h1>Wrapper Component</h1>
+      </Wrapper>
+
+      <Wrapper>
+        <h1>Wrapper Component 1</h1>
+      </Wrapper>
     </div>
   );
 
